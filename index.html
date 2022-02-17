@@ -20,15 +20,18 @@
     <header>
         <h2 class="text-center my-4 text-success">Monthly Income Expenses</h2>
     </header>
+
     <!-- main start -->
     <main>
         <div class="container">
 
             <div class="row">
-
+                <!-- images section start -->
                 <div class="col-sm-12 col-lg-6 mt-2 mb-5 px-5 mb-5 ">
                     <img class="w-100 h-100" src="money3.jpg" alt="">
                 </div>
+                <!-- images section end -->
+                <!-- Income and Expenses Section Start -->
                 <div class="col-sm-12 col-lg-6 mt-2 mb-5 bg-light">
                     <h4 class=" text-center pt-5 pb-3">Income</h4>
                     <div class="text-center">
@@ -53,22 +56,25 @@
                         <button id="calcaulate-total" class="btn btn-primary rounded-pill px-5"
                             type="submit">Calculate</button>
                     </div>
-                    <h4 class="text-center pt-3"> Total Expenses: 00</h4>
-                    <h4 class="text-center pt-1 pb-3"> Balance: 00</h4>
+                    <h4 class="text-center pt-3"> Total Expenses: <span id="total-expenses">00</span></h4>
+                    <h4 class="text-center pt-1 pb-3"> Balance: <span id="balance-remain">00</span></h4>
                     <div class="text-center pb-3">
                         <span class="p-3">Save:</span>
-                        <input class="bg-secondary text-white w-25 p-2" type="text"> <span>%</span>
-                        <button class="btn btn-primary rounded-pill px-5 py-3" type="submit">Save </button>
+                        <input id="save-input" class="bg-secondary text-white w-25 p-2" type="text"> <span>%</span>
+                        <button id="save-total" class="btn btn-primary rounded-pill px-5 py-3" type="submit">Save
+                        </button>
                     </div>
-                    <h4 class="text-center pt-3">Saving Amount: 00</h4>
-                    <h4 class="text-center pt-1">Remaining Balance: 00</h4>
+                    <h4 class="text-center pt-3">Saving Amount: <span id="saving-amount">00</span></h4>
+                    <h4 class="text-center pt-1">Remaining Balance: <span id="remaining-balance">00</span></h4>
 
                 </div>
+                <!-- Income and Expenses Section End -->
 
             </div>
 
         </div>
     </main>
+    <!-- linking with javascripts -->
     <script src="expenditure.js"></script>
 </body>
 
