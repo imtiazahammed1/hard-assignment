@@ -50,6 +50,8 @@ function saveupdatevalue() {
 
 }
 
+
+
 //  Function calling number 1
 document.getElementById('calcaulate-total').addEventListener('click', function () {
     updatevalue();
