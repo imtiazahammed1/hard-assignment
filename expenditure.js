@@ -2,9 +2,19 @@
 //  Expenses and Balance Function
 
 function updatevalue() {
+    const error = document.getElementById('number');
+    if (isNaN(document.getElementById("income-input").value)) {
+
+        error.innerHTML = "Please enter a valid number";
+    }
+    else {
+        error.textContent = "";
+    }
     const incomeInput = document.getElementById('income-input');
     const incomeValue = incomeInput.value;
     const product = parseFloat(incomeValue);
+
+
     const foodieInput = document.getElementById('foodie-input');
     const foodieValue = foodieInput.value;
     const product1 = parseFloat(foodieValue);
@@ -26,9 +36,8 @@ function updatevalue() {
     const balanceInputText = balanceInput.innerText;
     balanceInput.innerText = balance;
     return balance;
-
-
 }
+
 
 // After Saving Remaining Balance
 // functioned number 2
@@ -49,6 +58,18 @@ function saveupdatevalue() {
     remainingBalance.innerText = balance - savingAmountText;
 
 }
+// Error message
+// function errorMessage() {
+//     var error = document.getElementById('income-input')
+//     if (isNaN(document.getElementById('income-input').value)) {
+
+//         // Changing content and color of content
+//         incomeInput.textContent = "Please enter a valid number"
+//         incomeInput.style.color = "red"
+//     } else {
+//         incomeInput.textContent = ""
+//     }
+// }
 
 
 
